@@ -1,0 +1,114 @@
+.footer {
+	background-color: #1a1a1a;
+	text-align: center;
+	padding: 50px 0 55px;
+	@media (min-width: 768px) {
+		padding: 70px 0 70px;
+	}
+	@media (min-width: 1200px) {
+		padding: 80px 0 70px;
+	}
+}
+
+.footer__nav-row {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
+	@media (min-width: 768px) {
+		margin-bottom: 50px;
+	}
+	@media (min-width: 1200px) {
+		flex-direction: row;
+		margin-bottom: 56px;
+	}
+}
+
+.footer__nav-item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 48px;
+	a {
+		margin-bottom: 20px;
+		text-decoration: none;
+		color: #fff;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 1.5;
+		letter-spacing: 3.2px;
+		transition: 0.4s ease;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		@media (min-width: 768px) {
+			margin-right: 35px;
+			margin-bottom: 0;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		@media (min-width: 1200px) {
+			margin-right: 38px;
+		}
+		&:hover,
+		&:focus {
+			color: rgba(50, 75, 241, 0.949);
+		}
+	}
+	@media (min-width: 768px) {
+		flex-direction: row;
+	}
+	@media (min-width: 1200px) {
+		margin-right: 33px;
+		margin-bottom: 0;
+	}
+}
+
+.footer__nav-social {
+	display: flex;
+	justify-content: space-between;
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, 0.102);
+		transition: background-color 0.4s ease;
+		text-decoration: none;
+		margin-right: 22px;
+		&:hover,
+		&:focus {
+			background-color: rgba(50, 75, 241, 0.949);
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+
+		@media (min-width: 768px) {
+			margin-right: 30px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.footer__copyright {
+	width: 195px;
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.302);
+	line-height: 1.714;
+	strong {
+		letter-spacing: 1.4px;
+	}
+	@media (min-width: 1200px) {
+		width: auto;
+		margin: 0;
+	}
+}
